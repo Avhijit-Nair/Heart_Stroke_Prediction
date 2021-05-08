@@ -1,0 +1,5 @@
+pandas
+numpy
+pickle-mixin
+streamlit
+PIL
