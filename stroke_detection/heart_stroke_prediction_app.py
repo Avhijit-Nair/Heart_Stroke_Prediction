@@ -4,13 +4,13 @@ import pickle
 import streamlit as st
 from PIL import Image
 
-pickle_in = open('classifier.pkl', 'rb')
+pickle_in = open('stroke_detection/classifier.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
 def welcome():
     return 'welcome all'
 
-def prediction(gender, age1, hypertension, heart_disease,married,work_type1,residence,avg_glucose1,bmi1,smoking_stat1):  
+def prediction(gender, age1, hypertension, heart_disease,married,work_type1,residence,avg_glucose1,bmi1,smoking_stat1):
     age = [0,0,0,0]
     work_type = [0,0,0,0,0]
     glucose_level = [0,0,0,0]
