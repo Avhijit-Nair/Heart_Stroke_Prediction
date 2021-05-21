@@ -1,0 +1,12 @@
+Male
+hyper -yes
+heart -yes
+married - yes
+urban
+82
+Govt job
+bmi - 53
+glucose - 228
+smokes / formerly smoked
+
+----------------------------------> 1
