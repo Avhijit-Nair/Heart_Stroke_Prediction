@@ -4,7 +4,7 @@ import pickle
 import streamlit as st
 from PIL import Image
 
-pickle_in = open('https://github.com/Avhijit-codeboy/Heart_Stroke_Prediction/blob/main/stroke_detection/classifier.pkl', 'rb')
+pickle_in = open('classifier.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
 def welcome():
