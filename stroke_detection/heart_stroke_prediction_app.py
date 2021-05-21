@@ -114,10 +114,10 @@ def main():
 		ans=prediction(get_Gender,get_age,get_Hypertension,get_heartDisease,get_married,get_workType,get_residence,get_glucose,get_bmi,get_smoke)[0]
 		if ans==0:
 			st.success('You have no chance of getting stroke😊')
-			st.image('images/happy_heart.jfif')
+			st.image('stroke_detection/images/happy_heart.jfif')
 		else:
 			st.success('You are at risk of getting stroke😥')
-			st.image('images/damaged_heart.jfif')
+			st.image('stroke_detection/images/damaged_heart.jfif')
 
 if __name__=='__main__':
     main()
