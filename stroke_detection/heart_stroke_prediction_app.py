@@ -4,13 +4,13 @@ import pickle
 import streamlit as st
 from PIL import Image
 
-pickle_in = open('classifier.pkl', 'rb')
+pickle_in = open('stroke_detection/classifier.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
 def welcome():
     return 'welcome all'
 
-def prediction(gender, age1, hypertension, heart_disease,married,work_type1,residence,avg_glucose1,bmi1,smoking_stat1):  
+def prediction(gender, age1, hypertension, heart_disease,married,work_type1,residence,avg_glucose1,bmi1,smoking_stat1):
     age = [0,0,0,0]
     work_type = [0,0,0,0,0]
     glucose_level = [0,0,0,0]
@@ -114,10 +114,10 @@ def main():
 		ans=prediction(get_Gender,get_age,get_Hypertension,get_heartDisease,get_married,get_workType,get_residence,get_glucose,get_bmi,get_smoke)[0]
 		if ans==0:
 			st.success('You have no chance of getting stroke😊')
-			st.image('images/happy_heart.jfif')
+			st.image('stroke_detection/images/happy_heart.jfif')
 		else:
 			st.success('You are at risk of getting stroke😥')
-			st.image('images/damaged_heart.jfif')
+			st.image('stroke_detection/images/damaged_heart.jfif')
 
 if __name__=='__main__':
     main()
